@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(255, 125, 241, 0.3), rgba(133, 133, 133, 0.3)), url('13.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.container{
+    width: 1fr;
+    height: 1fr;
+    background: rgba(50,50,50, 0.5);
+    margin: 5vh;
+    padding: 3vh;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 100px;
+    color: white;
+    
+}
+nav{
+    background-color: black;
+    width: 1fr;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav img{
+    height: 5rem;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li button{
+    color: white;
+    transition: .3s;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    height: 45px;
+    width: 110px;
+    border-radius: 50px;
+    background: linear-gradient(35deg, #7821F5, #F11E7B);
+
+}
+nav ul li button:hover{
+    background: #303030;
+    transition: .3s;
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+nav i{
+    font-size: 45px;
+    color: #F11E7B;
+    transition: 0.3s;
+}
+nav i:hover{
+    transition: 0.3s;
+    transform: scale(1.2,1.2);
+    color: #7821F5;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

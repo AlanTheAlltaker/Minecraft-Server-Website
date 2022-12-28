@@ -1,10 +1,18 @@
+@font-face {
+    font-family: minecraft;
+    src: url(Minecraft.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: minecraft;
+}
+a{
+    color: #fff;
 }
 body{
-    background-image: linear-gradient(rgba(255, 125, 241, 0.3), rgba(133, 133, 133, 0.3)), url('13.jpg');
+    background-image: linear-gradient(rgba(255, 125, 241, 0.2), rgba(133, 133, 133, 0.2)), url('13.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -12,41 +20,73 @@ body{
 }
 .container{
     width: 1fr;
-    height: 1fr;
-    background: rgba(50,50,50, 0.5);
+    height: auto;
     margin: 5vh;
-    padding: 3vh;
-    border-radius: 25px;
-    font-weight: bold;
-    margin-top: 100px;
+    margin: 100px 50px 0px 50px;
     color: white;
     
 }
-nav{
+.content{
+    display: flex;
+    justify-content: space-between;
+    height: 25vw;
+    width: 100%;
+    margin: 5vh 0vh;
+}
+.hold{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-size: 2.2vw;
+    height: auto;
+    width: 100%;
+    padding: 1vh 2vh;
+}
+.read{
+    text-align: center;
+}
+.text{
+    font-size: 1.9vw;
+    height: auto;
+    margin: 1vh 2vh;
+    font-style: italic;
+    font-weight: normal;
+}
+.content img{
+    width: 100%;
+    border-radius: 25px;
+}
+nav, footer{
     background-color: black;
     width: 1fr;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: white;
 
 }
 nav img{
-    height: 5rem;
+    height: 5vw;
 }
 nav ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 1vw 1vw;
 }
 nav ul li button{
+    font-size: 1vw;
     color: white;
     transition: .3s;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px;
-    height: 45px;
-    width: 110px;
+    padding: 1vw;
+    height: 3vw;
+    width: auto;
     border-radius: 50px;
     background: linear-gradient(35deg, #7821F5, #F11E7B);
 
@@ -58,7 +98,7 @@ nav ul li button:hover{
     cursor: pointer;
 }
 nav i{
-    font-size: 45px;
+    font-size: 3vw;
     color: #F11E7B;
     transition: 0.3s;
 }

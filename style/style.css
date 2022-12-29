@@ -1,0 +1,115 @@
+@font-face {
+    font-family: minecraft;
+    src: url(Minecraft.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: minecraft;
+}
+a{
+    color: #fff;
+}
+body{
+    background-image: linear-gradient(rgba(255, 125, 241, 0.2), rgba(133, 133, 133, 0.2)), url('https://media.forgecdn.net/attachments/383/873/unknown3.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.container{
+    width: 1fr;
+    height: auto;
+    margin: 5vh;
+    margin: 100px 50px 0px 50px;
+    color: white;
+    
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    height: 25vw;
+    width: 100%;
+    margin: 5vh 0vh;
+}
+.hold{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-size: 2.2vw;
+    height: auto;
+    width: 100%;
+    padding: 1vh 2vh;
+}
+.read{
+    text-align: center;
+}
+.text{
+    font-size: 1.9vw;
+    height: auto;
+    margin: 1vh 2vh;
+    font-style: italic;
+    font-weight: normal;
+}
+.content img{
+    width: 100%;
+    border-radius: 25px;
+}
+nav, footer{
+    background-color: black;
+    width: 1fr;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    z-index: 1;
+
+}
+nav img{
+    height: 5vw;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 1vw 1vw;
+}
+nav ul li button{
+    font-size: 1vw;
+    color: white;
+    transition: .3s;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1vw;
+    height: 3vw;
+    width: auto;
+    border-radius: 50px;
+    background: linear-gradient(35deg, #7821F5, #F11E7B);
+
+}
+nav ul li button:hover{
+    background: #303030;
+    transition: .3s;
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+nav i{
+    font-size: 3vw;
+    color: #F11E7B;
+    transition: 0.3s;
+}
+nav i:hover{
+    transition: 0.3s;
+    transform: scale(1.2,1.2);
+    color: #7821F5;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

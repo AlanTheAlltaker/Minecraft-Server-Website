@@ -1,0 +1,62 @@
+.container{
+    margin-top: 7vw;
+}
+.search{
+    text-align: center;
+    margin: 3vw;
+    margin-top: 10vw;
+    scale: 1.5;
+    font-size: 1.2vw;
+}
+.search input{
+    margin: 1vw;
+    height: 2vw;
+    width: 20vw;
+    border-radius: 1vw;
+    text-align: center;
+    font-size: 1vw;
+}
+.poradniki{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.poradnik{
+    margin: 1vw;
+    width: 44vw;
+    height: 10vw;
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    background: rgba(80, 80, 80, 0.5);
+    transition: .3s;
+    font-size: 1.3vw;
+}
+.poradnik:hover{
+    background: linear-gradient(
+        35deg,
+        rgba(120, 33, 245, 0.5),
+        rgba(241, 30, 123, 0.5)
+
+    );
+    scale: 1.05;
+    transition: .3s;
+    cursor: pointer;
+}
+.poradnik img{
+    height: 100%;
+    padding: 1vw;
+}
+.poradnik .name{
+    padding: 1vw;
+}
+.poradnik .name h3{
+    margin: 0vw 0vw 1vw 0vw;
+    font-size: 2.5vw;
+}
+.poradniki a{
+    text-decoration: none;
+    transition: .3s;
+    cursor: default;
+}

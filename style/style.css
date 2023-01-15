@@ -24,7 +24,6 @@ body{
     margin: 5vh;
     margin: 100px 50px 0px 50px;
     color: white;
-    
 }
 .content{
     display: flex;
@@ -60,8 +59,8 @@ body{
     width: 100%;
     border-radius: 25px;
 }
-nav, footer{
-    background-color: black;
+nav{
+    background-color: #101010;
     width: 1fr;
     height: auto;
     display: flex;
@@ -73,6 +72,7 @@ nav, footer{
 }
 nav img{
     height: 5vw;
+    border: 0.1vw solid #7821F5;
 }
 nav ul li {
     list-style-type: none;
@@ -88,7 +88,7 @@ nav ul li button{
     padding: 1vw;
     height: 3vw;
     width: auto;
-    border-radius: 50px;
+    border-radius: 2vw;
     background: linear-gradient(35deg, #7821F5, #F11E7B);
 
 }
@@ -111,5 +111,18 @@ nav i:hover{
 .sticky {
     position: fixed;
     top: 0;
+    width: 100%;
+}
+footer{
+    text-align: center;
+    width: 1fr;
+    color: #fff;
+    font-size: 1.5vw;
+    background: linear-gradient(35deg, #7821F5, #F11E7B);
+    padding: 1vw;
+}
+.sticky2 {
+    position: fixed;
+    bottom: 0;
     width: 100%;
 }
